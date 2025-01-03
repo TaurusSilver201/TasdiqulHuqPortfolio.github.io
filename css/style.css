@@ -81,6 +81,7 @@ nav ul li a:hover {
   max-width: 800px;
   margin: auto;
   z-index: 1;
+  padding: 0 20px; /* Added padding for responsiveness */
 }
 
 #home h1 {
@@ -159,10 +160,50 @@ section {
   max-width: 100%;
   height: auto;
   transition: transform 0.3s;
+  cursor: pointer; /* Add cursor pointer */
 }
 
 .certification-item img:hover {
   transform: scale(1.1);
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 footer {
@@ -179,4 +220,86 @@ footer a {
 
 footer a:hover {
   color: #ff8c00;
+}
+
+#about {
+  padding: 80px 30px; /* Increased padding */
+  margin: 30px 0; /* Increased margin */
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#about h2 {
+  font-size: 36px; /* Increased font size */
+  margin-bottom: 20px; /* Added margin */
+}
+
+#about p {
+  font-size: 20px; /* Increased font size */
+  line-height: 1.6; /* Improved line height */
+  margin-bottom: 20px; /* Added margin */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    padding: 10px 15px; /* Adjusted padding */
+    font-size: 16px; /* Adjusted font size */
+  }
+
+  #home {
+    padding: 60px 0; /* Adjusted padding */
+  }
+
+  #home h1 {
+    font-size: 36px; /* Adjusted font size */
+  }
+
+  #home p {
+    font-size: 18px; /* Adjusted font size */
+  }
+
+  #home .profile-image img {
+    width: 120px; /* Adjusted size */
+    height: 120px; /* Adjusted size */
+  }
+
+  section {
+    padding: 40px 20px; /* Adjusted padding */
+  }
+
+  #skills ul {
+    flex-direction: column;
+    gap: 10px; /* Adjusted gap */
+  }
+
+  #skills li {
+    padding: 10px 15px; /* Adjusted padding */
+    font-size: 16px; /* Adjusted font size */
+  }
+
+  .projects-container {
+    flex-direction: column;
+    gap: 20px; /* Adjusted gap */
+  }
+
+  .project {
+    width: 100%; /* Full width */
+  }
+
+  .certifications-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjusted min width */
+    gap: 20px; /* Adjusted gap */
+    padding: 20px; /* Adjusted padding */
+  }
+
+  footer {
+    padding: 20px; /* Adjusted padding */
+  }
 }
