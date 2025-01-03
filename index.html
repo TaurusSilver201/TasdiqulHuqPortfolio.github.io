@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Add animation styles */
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+
+        .slide-in {
+            animation: slideIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="fade-in">
+        <nav>
+            <div class="logo">
+                <h1>Tasdiqul Huq</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="fade-in" style="background-image: url('assets/images/header-bg.jpg'); background-size: cover; background-position: center;">
+        <div class="overlay">
+            <div class="intro">
+                <h1>Hi, I'm Tasdiqul Huq</h1>
+                <p>Backend Developer (Python) | SEO & Web Scraping</p>
+                <div class="profile-image">
+                    <img src="assets/images/profile.jpg" alt="Tasdiqul Huq">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="slide-in">
+            <h2>About Me</h2>
+            <p>I am an undergraduate in Computer Science and Engineering with a proven track record of developing scalable backend solutions and implementing advanced automation processes to drive operational excellence. Leveraging my expertise in Python and system optimization, I consistently deliver results that align with strategic business objectives.</p>
+            <p>In my current role as a Python Developer at T.B. Solutions - SEO Domains, I have engineered modular and reusable scripts that have streamlined workflows, enhanced data accuracy, and significantly reduced manual overhead. My integration of automation tools, including ChatGPT and Zapier, has delivered measurable efficiency gains and operational cost savings. Previously, as a Web Specialist at Alliance, I elevated system reliability, maintained near-zero downtime, and spearheaded the development of a responsive web platform, contributing to substantial increases in engagement and revenue.</p>
+            <p>My portfolio includes leading high-impact projects such as an automated parking guidance system with real-time feedback mechanisms and a multithreaded Wayback Machine scraper optimized for SEO research. Additionally, my ongoing research into mitigating linguistic biases in detection tools reflects a commitment to addressing complex and nuanced challenges in technology.</p>
+            <p>With a robust skill set encompassing Python, Django, MySQL, and advanced automation tools, I bring a solutions-oriented mindset and technical rigor to every initiative. I am proficient in English and possess foundational Japanese language skills, enabling effective collaboration in diverse and global environments.</p>
+            <p>I am passionate about leveraging technology to solve critical challenges and am eager to connect with like-minded professionals to drive innovation and deliver transformative results.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Web Development</li>
+            <li>Machine Learning</li>
+            <li>Problem Solving</li>
+            <li>Version Control (Git)</li>
+            <li>Frontend Development: HTML, CSS, JavaScript</li>
+            <li>Backend Development: Python, PHP</li>
+            <li>Tools & Frameworks: Django, MySQL, Git, GitHub, Jenkins</li>
+            <li>Other Skills: Data Analysis, Automation, Problem Solving</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="slide-in">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Automated Parking Guidance System</h3>
+                <p>Developed a system for real-time detection, navigation guidance, and feedback during parking. Implemented monitoring and update mechanisms, reducing response times and improving system uptime. Conducted rigorous testing to ensure reliability in various parking environments.</p>
+                <a href="https://github.com/TaurusSilver201/automated-parking-guidance" target="_blank"></a>
+            </div>
+            <div class="project">
+                <h3>Ndub CSE Club Management System</h3>
+                <p>Built a comprehensive system for user and event management. Implemented real-time messaging capabilities and streamlined event coordination through a dedicated platform. Created reports and analytics modules for insights, enabling data-driven decision-making.</p>
+                <a href="https://github.com/TaurusSilver201/ndub-cse-club-management" target="_blank"></a>
+            </div>
+            <div class="project">
+                <h3>Wayback Machine Scraper</h3>
+                <p>Developed a tool to extract historical snapshots from the Wayback Machine. Implemented multithreading for faster processing and saved results in CSV format. Extracted titles, descriptions, keywords, and content for comprehensive analysis, aiding SEO research.</p>
+                <a href="https://github.com/TaurusSilver201/wayback-machine-scraper" target="_blank"></a>
+            </div>
+            <div class="project">
+                <h3>Linguistic Bias in Plagiarism Detection Algorithms</h3>
+                <p>Conducting a case study on English writers. Focused on dataset preparation, preprocessing, feature engineering, and model fine-tuning. Aimed to uncover and mitigate biases in plagiarism detection tools.</p>
+                <a href="https://github.com/TaurusSilver201/linguistic-bias-plagiarism-detection" target="_blank"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="fade-in">
+        <h2>Certifications</h2>
+        <div class="certifications-gallery">
+            <div class="certification-item">
+                <img src="assets/images/projectshowcase2024.jpg" alt="1">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/problem_solving_intermediate certificate.png" alt="2">
+            </div>
+            
+            <div class="certification-item">
+                <img src="assets/images/BuildingWithArtifical Intelligence.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/Functional Programming in Python.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/Prompt Engineering for Everyone.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/sql_advanced certificate.png" alt="Certification 4">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/java_basic certificate.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/LLM_certificate.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/Engineering Output Size with LLMs Certification.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/Journey Into Format Control in Prompt Engineering Certification.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/Prompt Engineering for Precise Text Modification.png" alt="Certification 3">
+            </div>
+            
+            <div class="certification-item">
+                <img src="assets/images/Advanced Functional Programming Techniques.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/Mastering Functions in Python.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/Designing Higher-Order Functions in Python.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/Standard Higher-Order Functions in Python.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/Generators and Iterators in Python.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/Functional Programming Techniques.png" alt="Certification 3">
+            </div>
+            
+            <div class="certification-item">
+                <img src="assets/images/Implementing Scalable Web Scraping with Python.png" alt="Certification 3">
+            </div>
+            
+            <div class="certification-item">
+                <img src="assets/images/python_basic certificate.png" alt="Certification 3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/embeddingsfornlp-kisz2023_ConfirmationOfParticipation.png" alt="3">
+            </div>
+            <div class="certification-item">
+                <img src="assets/images/profitableai2024_ConfirmationOfParticipation.png" alt="Certification 3">
+            </div>
+            <!-- Repeat for all certifications -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="slide-in">
+        <h2>Contact</h2>
+        <p>If you'd like to connect, feel free to reach out via email at: <a href="mailto:tasdiqulhuq@gmail.com">tasdiqulhuq@gmail.com</a></p>
+        <p>Phone: 01778039296</p>
+        <p>Location: Dhaka, Bangladesh</p>
+        <div class="social-links">
+            <a href="https://github.com/TaurusSilver201" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/tasdiqul-huq" target="_blank">LinkedIn</a>
+            <a href="https://www.hackerrank.com/profile/tasdiqulhuq" target="_blank">HackerRank</a>
+            <a href="https://leetcode.com/u/tasdiqulhuq/" target="_blank">LeetCode</a>
+            <a href="https://learn.codesignal.com/profile/cm59akr0p000bkx9gwyp2szh6" target="_blank">CodeSignal</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tasdiqul Huq | <a href="https://github.com/TaurusSilver201">GitHub</a> | <a href="https://linkedin.com/in/tasdiqul-huq">LinkedIn</a> | <a href="https://www.hackerrank.com/profile/tasdiqulhuq">HackerRank</a> | <a href="https://leetcode.com/u/tasdiqulhuq/">LeetCode</a> | <a href="https://learn.codesignal.com/profile/cm59akr0p000bkx9gwyp2szh6">CodeSignal</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
