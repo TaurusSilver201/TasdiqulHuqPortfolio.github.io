@@ -224,14 +224,15 @@ footer a:hover {
 
 #about {
   padding: 80px 30px; /* Increased padding */
-  margin: 30px 0; /* Increased margin */
+  margin: 30px auto; /* auto centers horizontally */
+  max-width: 900px;  /* controls width, adjust as needed */
   background-color: #1e1e1e;
   color: #f0f0f0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 #about h2 {
-  font-size: 36px; /* Increased font size */
+  font-size: 35px; /* Increased font size */
   margin-bottom: 20px; /* Added margin */
 }
 
@@ -239,6 +240,7 @@ footer a:hover {
   font-size: 20px; /* Increased font size */
   line-height: 1.6; /* Improved line height */
   margin-bottom: 20px; /* Added margin */
+  
 }
 
 /* Responsive styles */
@@ -302,4 +304,30 @@ footer a:hover {
   footer {
     padding: 20px; /* Adjusted padding */
   }
+}
+/* Global fix: stop unwanted horizontal scrolling */
+* {
+    box-sizing: border-box; /* ensures padding/borders don’t cause overflow */
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Extra mobile fine-tuning */
+@media (max-width: 600px) {
+    section {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #about {
+        padding: 1.5em 1em;
+    }
+
+    .certifications-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 15px;
+    }
 }
